@@ -1,0 +1,289 @@
+<!-- Ni skapa en webbplats åt det fiktiva hotellet Bonz.ai som erbjuder en AI-driven eko vistelse.
+
+Funktionella krav
+Dessa är de sidor som ska finnas med. Man får göra fler ifall man vill. 
+Ni får själva välja design som länge de funktionella kraven uppfylls. 
+Det finns dock lite bilder på Learnpoint som man kan använda som inspiration.
+
+En landningssida (alltså startsida)
+En sida om hotellet och dess faciliteter
+En bokningssida för att söka och boka rum 
+(ingen funktionalitet behövs utan fejka en sökning där sökresultaten visas statiskt)
+All text kan vara lorem ipsum.
+
+Tekniska krav
+Sidan ska vara responsiv (d.v.s den ska funka både i desktop och mobilt läge).
+Använda dig av semantisk HTML.
+Använda CSS Grid och flexbox.
+En CSS-fil ska bara användas.
+Bilder
+Bilder och logotyp hittar ni här.
+
+Betygskriterier
+För att få godkänt ska du:
+
+Ha gjort hemsidan responsiv (d.v.s den ska funka både i desktop och mobilt läge).
+Använda dig av semantisk HTML.
+Använda CSS Grid och flexbox.
+Använda dig av bilder (exempelvis de bifogade bilderna men ej ett krav på just dessa).
+Det enbart finns en CSS-fil.
+För att få Väl Godkänt ska du:
+
+Allt i godkänt
+Använda dig av BEM som namnstandard. Detta ska användas konsekvent över alla sidor, 
+d.v.s. det är inte godkänt att enbart ha det på några få element för att nå Väl Godkänt.
+Inlämning
+Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. 
+Gå sedan in på Learnpoint och kopiera in länken till ditt repo. 
+Antingen som en kommentar på Learnpoint eller lägg in länken i en textfil och ladda upp textfilen.
+
+Inlämning senast: 10/12 23:59 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonzai</title>
+    <script src="https://kit.fontawesome.com/5cc8f49d4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header section -->
+
+<header>
+
+    <nav>
+        <div class="logo__container">
+            <img class="logo" src="./assets/logo/bonzai-logo.svg" alt="Bonz.ai header logo" width="100px">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger__btn">
+            <i class="fa-solid fa-grip-lines"></i>
+        </label>
+        <ul class="nav__list">
+            <li><a class="nav__link nav__link--active" href="#">Explore</a></li>
+            <li><a class="nav__link" href="#">About us</a></li>
+            <li><a class="nav__link" href="#">Contact</a></li>
+            <li><a class="nav__link nav__link--cta" href="#">Stay with us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<!-- Main section -->
+
+<main>
+
+    <div class="wrapper">
+
+<!-- Hero -->
+
+        <section class="hero grid">
+            <img class="hero__bg" src="assets/img/08-night.jpg" alt="Tree house with glass windows" width="100%">
+            <div class="hero__txt__container">
+                <h1>Experience nature with new eyes.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi doloribus sed quo et
+                    exercitationem! Et nisi vero rerum.</p>
+            </div>
+            <button class="hero__btn btn__secondary">Read more</button>
+        </section>
+
+<!-- Slider -->
+
+        <section class="slider__wrapper grid">
+            <h2>Our facilities</h2>
+            <ul class="slider">
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slider__card">
+                    <img class="card__img" src="assets/img/01-day.jpg" alt="day" width="100%">
+                    <p class="card__img__overlay-txt">EXCLUSIVE</p>
+                    <div class="card__info__grid">
+                        <h3 class="card__title">The Luxury Villa</h3>
+                        <div class="card__price-rating__flexbox">
+                            <h4 class="card__price">$180/night</h4>
+                            <div class="card__rating">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn__contaner__slider">
+                <button class="btn__primary">See all</button>
+            </div>
+        </section>
+
+<!-- About us section -->
+
+        <section class="about-us grid">
+            <img class="about-us__bg" src="assets/img/03-day.jpg" alt="Tree house with glass windows" width="100%">
+            <div class="about-us__txt__container">
+                <h2>Experience nature with new eyes.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi doloribus sed quo et
+                    exercitationem! Et nisi vero rerum.</p>
+            </div>
+            <button class="about-us__btn btn__secondary">Read more</button>
+        </section>
+
+<!-- Ratings section -->
+
+        <section class="ratings__grid">
+            <div class="ratings__block">
+                <img class="ratings__avatar"
+                    src="https://s3-alpha-sig.figma.com/img/903b/674a/5016cc8f074bb3bb469e48104d576af3?Expires=1702857600&Signature=etSrVXEy5vXGK3hyIrOlmFAwbV8BqS~tGErDCp7t26rMhO8iFf1Y~woZpQLU8wnFyznT3r8abYSu5zShqRHmpKt6Ky6nNWmMcsz8lbqiCIIdWYRUMw0SdfwJzSS0e~RT1Og4zwsqVfyDZn6w8ZEyqu43NnVJVCeoVDOrWmKDCOPLNAGy0nhekwqDLnmmvuGWXeyBspd3K8k2f2fxtrRv~Z2Z464Rhno~yjmc9F7TB8mgG2j90Jaaewsx0tbp1yhVuH3NZjfQFM5Kwlsra0tdzqYLeeIApeM4L-i~26eaSWm6a~tFz5bassSma4~mtW09xLgvJcUKZwp1SGWvH0bEIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="Rating avatar for Luxury Villa">
+                <h3>Annette Black</h3>
+                <h4>The Luxury Villa</h4>
+                <div class="ratings__rating">
+                    <p>4.8</p>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                </div>
+            </div>
+
+            <div class="ratings__block">
+                <img class="ratings__avatar"
+                    src="https://s3-alpha-sig.figma.com/img/903b/674a/5016cc8f074bb3bb469e48104d576af3?Expires=1702857600&Signature=etSrVXEy5vXGK3hyIrOlmFAwbV8BqS~tGErDCp7t26rMhO8iFf1Y~woZpQLU8wnFyznT3r8abYSu5zShqRHmpKt6Ky6nNWmMcsz8lbqiCIIdWYRUMw0SdfwJzSS0e~RT1Og4zwsqVfyDZn6w8ZEyqu43NnVJVCeoVDOrWmKDCOPLNAGy0nhekwqDLnmmvuGWXeyBspd3K8k2f2fxtrRv~Z2Z464Rhno~yjmc9F7TB8mgG2j90Jaaewsx0tbp1yhVuH3NZjfQFM5Kwlsra0tdzqYLeeIApeM4L-i~26eaSWm6a~tFz5bassSma4~mtW09xLgvJcUKZwp1SGWvH0bEIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="Rating avatar for Luxury Villa">
+                <h3>Annette Black</h3>
+                <h4>The Luxury Villa</h4>
+                <div class="ratings__rating">
+                    <p>4.8</p>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                </div>
+            </div>
+
+            <div class="ratings__block">
+                <img class="ratings__avatar"
+                    src="https://s3-alpha-sig.figma.com/img/903b/674a/5016cc8f074bb3bb469e48104d576af3?Expires=1702857600&Signature=etSrVXEy5vXGK3hyIrOlmFAwbV8BqS~tGErDCp7t26rMhO8iFf1Y~woZpQLU8wnFyznT3r8abYSu5zShqRHmpKt6Ky6nNWmMcsz8lbqiCIIdWYRUMw0SdfwJzSS0e~RT1Og4zwsqVfyDZn6w8ZEyqu43NnVJVCeoVDOrWmKDCOPLNAGy0nhekwqDLnmmvuGWXeyBspd3K8k2f2fxtrRv~Z2Z464Rhno~yjmc9F7TB8mgG2j90Jaaewsx0tbp1yhVuH3NZjfQFM5Kwlsra0tdzqYLeeIApeM4L-i~26eaSWm6a~tFz5bassSma4~mtW09xLgvJcUKZwp1SGWvH0bEIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="Rating avatar for Luxury Villa">
+                <h3>Annette Black</h3>
+                <h4>The Luxury Villa</h4>
+                <div class="ratings__rating">
+                    <p>4.8</p>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+</main>
+
+<!-- Footer section -->
+
+<footer>
+
+    <nav class="footer__nav grid">
+        <ul class="footer__nav__list">
+            <li><a class="footer__nav__link nav__link nav__link--cta" href="#">Stay with us</a></li>
+            <li><a class="footer__nav__link nav__link nav__link--active" href="#">Explore</a></li>
+            <li><a class="footer__nav__link nav__link" href="#">About us</a></li>
+            <li><a class="footer__nav__link nav__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="footer__top-btn">
+    <a href="#"><i class="fa-solid fa-chevron-up fa-xl" style="color: #182525;"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -14,6 +14,7 @@
   --background-secondary: #EFEFE7;
   --background-icon-text: #182525;
   --background-btn: #F95738;
+  --background-second: #BDBCBB;
 }
 
 html:focus-within {
@@ -26,15 +27,9 @@ body {
   line-height: 1.5;
 }
 
-/* img {
-
-} */
-
-
-
 h1,
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 2.3rem;
 }
@@ -42,11 +37,13 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: 400;
+  line-height: 2rem;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 p {
@@ -225,11 +222,12 @@ main {
 }
 
 .grid {
-  margin: 2rem 0;
+  margin: 1.5rem 0 4rem 0;
+  padding: 0 2em;
 }
 
-.article {
-  background-color: #182525;
+.article__hero {
+  background-color: var(--background-second);
   background-image: url('./assets/img/08-night.jpg');
   background-size: cover;
   padding-bottom: 100px;
@@ -240,32 +238,25 @@ main {
   justify-content: start;
 }
 
-.article__txt__container {
+.article__hero__txt__container {
   background-color: rgba(32, 32, 32, 0.5);
   color: var(--background-main);
   padding: 2rem;
   border-radius: 2.5rem;
 }
 
-.article__btn__container {
-  padding: 0 2rem;
+.article__hero__txt__container h1 {
+  margin-bottom: .6rem;
 }
 
 /* Slider section */
 
 .slider__wrapper {
-  /* z-index: 900;
-  width: 100vw; */
-  /* width: 100%; */
-  /* margin-left: 50%;
-  transform: translate3d(-50%, 0, 0); */
-  background: #aaaeb6;
-  margin-bottom: 2rem;
+  background: var(--background-second);
 }
 
-.slider__wrapper h2 {
-  color: var(--background-main);
-  padding: 1rem;
+.slider__title {
+  padding: 5rem 3rem 0;
 }
 
 .slider {
@@ -274,7 +265,6 @@ main {
   display: flex;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 24px;
-  margin-left: .5rem;
 }
 
 .slider .slider__card {
@@ -286,7 +276,7 @@ main {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   flex-shrink: 0;
   scroll-snap-align: start;
-  margin: 2rem .5rem;
+  margin: 2rem 0 2rem 1rem;
 }
   
 .card__img {
@@ -296,7 +286,7 @@ main {
   min-height: 300px;
   object-fit: cover;
   border-radius: 3.5rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -326,28 +316,30 @@ main {
   border-radius: 30px;
   text-align: center;
   color: white;
-  background-color: var(--background-icon-text);
-  padding: 1rem 2rem;
+  background-color: rgba(8, 8, 8, 0.7);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: .8rem 1.3rem;
+  font-weight: 300;
 }
 
 .card__info__grid {
-  padding: 1rem 1.5rem;
+  padding: 0 2rem;
 }
 
 .card__info__grid h3 {
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .card__rating {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: var(--background-second);
   border-radius: 2rem;
-  padding: .5rem 1.2rem;
+  padding: .6rem 1.1rem;
 }
 
-.card__rating p {
-  margin-left: .5rem;
+.card__rating h4 {
+  margin-left: .4rem;
 }
 
 .card__info__grid .card__price-rating__flexbox {
@@ -359,7 +351,7 @@ main {
 
 .btn__contaner__slider {
   display: grid;
-  padding: 2rem;
+  padding: 0 3rem;
 }
 
 .btn__contaner__slider .btn__primary {
@@ -369,20 +361,27 @@ main {
 
 /* About us section */
 
-.about-us {
-  margin-top: 3rem;
+.article__about-us {
+  background-color: #182525;
+  background-image: url('./assets/img/04-night.jpg');
+  background-size: cover;
+  padding-bottom: 100px;
+  border-radius: 2.5rem;
+  min-height: 350px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
-.about-us__bg {
-  max-width: 100%;
-  display: block;
-  border-radius: 3.5rem;
-  min-height: 400px;
-  object-fit: cover;
+.article__about-us__txt__container {
+  color: white;
+  background-color: rgba(32, 32, 32, 0.5);
+  padding: 2rem;
+  border-radius: 2.5rem;
 }
 
-.about-us__txt__container {
-  padding: 1rem;
+.article__about-us__txt__container h1 {
+  margin-bottom: .6rem;
 }
 
 /* Ratings grid */
@@ -417,22 +416,27 @@ main {
   max-width: 7em;
 }
 
+.ratings__block h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: .2rem 0;
+}
+
+.ratings__block h4 {
+  font-weight: 300;
+  margin: .2rem 0;
+}
+
 .ratings__rating {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-/* .ratings__rating .fa-solid .fa-star {
-
-} */
-
-.ratings__rating p {
-  color: var(--background-main);
-  font-size: 1.5rem;
-  margin-right: .5rem;
+.ratings__rating h4 {
+  margin-right: 0.5rem;
+  font-weight: 400;
 }
-
 
 /* Footer section */
 

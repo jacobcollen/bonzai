@@ -21,7 +21,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-body {
+body .index {
   font-family: 'br sonoma', Arial, Helvetica, sans-serif;
   background-color: var(--background-main);
   line-height: 1.5;
@@ -280,20 +280,21 @@ main {
 }
   
 .card__img {
-  background-image: url('./assets/img/01-day.jpg');
+  background-image: url('./assets/img/09-day.jpg');
   background-size: cover;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   min-height: 350px;
   object-fit: cover;
   border-radius: 3.5rem;
   padding: 2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: end;
   justify-content: center;
   }
 
 .slider__card:nth-child(2) .card__img {
-  background-image: url('./assets/img/02-day.jpg');
+  background-image: url('./assets/img/08-day.jpg');
 }
   
 .slider__card:nth-child(3) .card__img {
@@ -323,7 +324,7 @@ main {
 }
 
 .card__info__grid {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .card__info__grid h3 {
@@ -363,7 +364,7 @@ main {
 
 .article__about-us {
   background-color: #182525;
-  background-image: url('./assets/img/04-night.jpg');
+  background-image: url('./assets/img/03-night.jpg');
   background-size: cover;
   padding-bottom: 100px;
   border-radius: 2.5rem;
@@ -389,7 +390,7 @@ main {
 .ratings__grid {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background-color: var(--background-icon-text);
   border-radius: 3.5rem;
 }
@@ -400,16 +401,16 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
-.ratings__block:first-child {
-  margin-top: 7rem;
+/* .ratings__block:first-child {
+  margin-top: 12rem;
 }
 
 .ratings__block:last-child {
-  margin-bottom: 7rem;
-}
+  margin-bottom: 12rem;
+} */
 
 .ratings__avatar {
   border-radius: 50%;
@@ -458,14 +459,14 @@ main {
   margin-bottom: 3rem;
 }
 
-/* Large screen size */
+/* TABLET BREAKPOINT */
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
 
 h1,
 h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 h3 {
@@ -485,14 +486,12 @@ p {
   line-height: 1.5rem;
 }
 
-  
-  /* main */
-
   .btn__primary,
   .btn__secondary {
     font-size: 1.4rem;
-    height: 60px;
-    max-width: 260px;
+    height: 65px;
+    max-width: 300px;
+    margin: 1rem 0;
   }
 
   main {
@@ -519,6 +518,7 @@ p {
 
 .card__img {
   min-height: 400px;
+  margin-bottom: 2rem;
 }
 
 .card__info__grid {
@@ -526,16 +526,20 @@ p {
 }
 }
 
-@media only screen and (min-width: 980px) {
+
+/* DESKTOP BREAKPOINT */
+
+
+@media only screen and (min-width: 1150px) {
 
   h1,
 h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 6rem;
+  line-height: 6rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 2.5rem;
 }
@@ -587,9 +591,9 @@ p {
   
     .btn__primary,
     .btn__secondary {
-      font-size: 1.4rem;
-      height: 60px;
-      max-width: 260px;
+        font-size: 1.4rem;
+        height: 65px;
+        max-width: 350px;
     }
   
     main {
@@ -605,10 +609,10 @@ p {
     min-height: 900px;
   }
   
-  .slider__card {
-    width: 88%;
+  .slider .slider__card {
+    width: 45%;
     border-radius: 4.5rem;
-    margin: 3rem 1rem;
+    margin: 4rem .5rem;
   }
   
   .card__img {
@@ -626,4 +630,68 @@ p {
     padding: 2rem 3rem;
   }
   
+  .ratings__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-icon-text);
+    border-radius: 3.5rem;
   }
+
+  .ratings__block {
+    padding: 1rem 7rem;
+  }
+
+  /* .ratings__block:first-child {
+    margin-bottom: 12rem;
+    margin-left: 8rem;
+  }
+  
+  .ratings__block:last-child {
+    margin-top: 12rem;
+    margin-right: 8rem;
+  } */
+
+  }
+
+body.bookings__page {
+
+  .bookings__btn__box {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+  /* BOOKING.HTML */
+
+  input[type="date"] {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;  
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+  
+  
+::-webkit-calendar-picker-indicator {
+    /* background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;  
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto; */
+}
+
+}

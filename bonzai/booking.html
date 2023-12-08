@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonzai Booking page</title>
+    <script
+      src="https://kit.fontawesome.com/5cc8f49d4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bookings-page">
+    <section class="bookings__slider__wrapper">
+      <ul class="bookings__slider">
+        <li class="bookings__slider__img"></li>
+        <li class="bookings__slider__img"></li>
+        <li class="bookings__slider__img"></li>
+        <li class="bookings__slider__img"></li>
+        <li class="bookings__slider__img"></li>
+      </ul>
+    </section>
+
+    <div class="bookings-page__wrapper">
+      <section class="bookings__grid">
+        <section class="bookings__grid__item grid__item0">
+          <a href="index.html">
+            <i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff"></i>
+          </a>
+        </section>
+
+        <section
+          class="bookings__grid__item grid__item1 bookings__grid__item--full-width"
+        >
+          <label for="houses">Choose a resident</label>
+          <select name="houses" id="houses">
+            <option value="celestial-retreats">Celestial Retreats</option>
+            <option value="serenity-suites">Serenity Suites</option>
+            <option value="harbor-haven">Harbor Haven</option>
+            <option value="enchanted-escapes">Enchanted Escapes</option>
+            <option value="oasis-opulence">Oasis Opulence</option>
+            <option value="luxe-haven">Luxe Haven</option>
+          </select>
+        </section>
+
+        <section class="bookings__grid__item grid__item2">
+          <h2 class="bookings__tilte">Celestial Retreats</h2>
+        </section>
+
+        <section class="bookings__grid__item grid__item3">
+          <div class="square-meter__flexbox">
+            <i class="fa-solid fa-draw-polygon fa-xl"></i>
+            <p>189 m²</p>
+          </div>
+        </section>
+
+        <section class="bookings__grid__item grid__item4">
+          <div class="location__flexbox">
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+            <p>Crescent Cove, Salt Lake</p>
+          </div>
+        </section>
+
+        <section class="bookings__grid__item grid__item5">
+          <div class="bookings__rating__flexbox">
+            <i class="fa-solid fa-star fa-xl"></i>
+            <p>4.9 (489 reviews)</p>
+          </div>
+        </section>
+
+        <section class="bookings__grid__item grid__item6">
+          <section class="bookings__icons__flexbox">
+            <i class="fa-solid fa-bed-pulse fa-2xl"></i>
+            <i class="fa-solid fa-tv fa-2xl"></i>
+            <i class="fa-solid fa-house-signal fa-2xl"></i>
+            <i class="fa-solid fa-house-lock fa-2xl"></i>
+          </section>
+        </section>
+
+        <section
+          class="bookings__grid__item grid__item7 bookings__grid__item--full-width"
+        >
+          <label for="date">Day to check in</label>
+          <input type="date" id="date" />
+        </section>
+
+        <section
+          class="bookings__grid__item grid__item8 bookings__grid__item--full-width"
+        >
+          <label for="date">Day to check out</label>
+          <input type="date" id="date" />
+        </section>
+
+        <section class="bookings__grid__item grid__item9">
+          <p class="checkout-days">Days to stay</p>
+        </section>
+
+        <section class="bookings__grid__item grid__item10">
+          <section class="checkout-time__flexbox">
+            <i class="fa-regular fa-clock fa-xl"></i>
+            <p>Check out 12.00</p>
+          </section>
+        </section>
+
+        <section
+          class="bookings__grid__item grid__item11 bookings__grid__item--full-width"
+        >
+          <section class="bookings__btn__box">
+            <button class="bookings__btn">
+              <div class="btn__price">$250/night</div>
+              <div class="btn__txt">Make reservation</div>
+            </button>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

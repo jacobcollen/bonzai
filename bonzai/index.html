@@ -1,317 +1,256 @@
-<!-- Ni skapa en webbplats åt det fiktiva hotellet Bonz.ai som erbjuder en AI-driven eko vistelse.
-
-Funktionella krav
-Dessa är de sidor som ska finnas med. Man får göra fler ifall man vill. 
-Ni får själva välja design som länge de funktionella kraven uppfylls. 
-Det finns dock lite bilder på Learnpoint som man kan använda som inspiration.
-
-En landningssida (alltså startsida)
-En sida om hotellet och dess faciliteter
-En bokningssida för att söka och boka rum 
-(ingen funktionalitet behövs utan fejka en sökning där sökresultaten visas statiskt)
-All text kan vara lorem ipsum.
-
-Tekniska krav
-Sidan ska vara responsiv (d.v.s den ska funka både i desktop och mobilt läge).
-Använda dig av semantisk HTML.
-Använda CSS Grid och flexbox.
-En CSS-fil ska bara användas.
-Bilder
-Bilder och logotyp hittar ni här.
-
-Betygskriterier
-För att få godkänt ska du:
-
-Ha gjort hemsidan responsiv (d.v.s den ska funka både i desktop och mobilt läge).
-Använda dig av semantisk HTML.
-Använda CSS Grid och flexbox.
-Använda dig av bilder (exempelvis de bifogade bilderna men ej ett krav på just dessa).
-Det enbart finns en CSS-fil.
-För att få Väl Godkänt ska du:
-
-Allt i godkänt
-Använda dig av BEM som namnstandard. Detta ska användas konsekvent över alla sidor, 
-d.v.s. det är inte godkänt att enbart ha det på några få element för att nå Väl Godkänt.
-Inlämning
-Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. 
-Gå sedan in på Learnpoint och kopiera in länken till ditt repo. 
-Antingen som en kommentar på Learnpoint eller lägg in länken i en textfil och ladda upp textfilen.
-
-Inlämning senast: 10/12 23:59 -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bonzai</title>
-    <script
-      src="https://kit.fontawesome.com/5cc8f49d4e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="index">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonzai</title>
+  <script src="https://kit.fontawesome.com/5cc8f49d4e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- NAV - HEADER-->
+<body>
 
-    <header>
-      <nav>
-        <div class="logo__container">
-          <img
-            class="logo"
-            src="./assets/logo/bonzai-logo.svg"
-            alt="Bonz.ai header logo"
-            width="100px"
-          />
-        </div>
-        <input type="checkbox" id="check" />
-        <label for="check" class="hamburger__btn">
-          <i class="fa-solid fa-grip-lines fa-xl"></i>
-        </label>
-        <ul class="nav__list">
-          <li><a class="nav__link nav__link--active" href="#">Explore</a></li>
-          <li><a class="nav__link" href="">About us</a></li>
-          <li><a class="nav__link" href="">Contact</a></li>
-          <li>
-            <a class="nav__link nav__link--cta" href="booking.html"
-              >Stay with us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- NAV - HEADER-->
 
-    <!-- MAIN -->
-
-    <main>
-      <div class="wrapper">
-
-        <!-- Hero -->
-
-        <article class="article__hero">
-          <section class="article__hero__txt__container">
-            <h1>Experience nature with new eyes.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur elit ...</p>
-          </section>
-        </article>
-
-        <section class="article__btn__container grid">
-          <button class="btn__secondary">Read more</button>
-        </section>
-
+  <header>
+    <nav>
+      <div class="logo__container">
+        <img class="logo" src="./assets/logo/bonzai-logo.svg" alt="Bonz.ai header logo" width="100px" />
       </div>
 
-      <!-- Slider -->
+      <input type="checkbox" id="check" />
+      <label for="check" class="hamburger__btn">
+        <i class="fa-solid fa-grip-lines fa-xl"></i>
+      </label>
 
-      <section class="slider__wrapper">
-        <h2 class="slider__title">Our facilities</h2>
-        <ul class="slider">
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Exclusive Hideaway</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Celestial Retreats</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$250/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-star fa-xl"></i>
-                  <h4>4.9</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Tranquil Escape</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Serenity Suites</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$200/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-star fa-xl"></i>
-                  <h4>4.8</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Vibrant Waterfront</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Harbor Haven</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$300/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-star fa-xl"></i>
-                  <h4>4.8</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Magical Retreat</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Enchanted Escapes</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$300/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-star fa-xl"></i>
-                  <h4>5.0</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Luxury Desert Haven</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Oasis Opulence</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$180/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-star fa-xl"></i>
-                  <h4>4.9</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__card">
-            <figure class="card__img">
-              <h4 class="card__img__overlay-txt">Urban Elegance</h4>
-            </figure>
-            <div class="card__info__grid">
-              <h3 class="card__title">Luxe Haven</h3>
-              <div class="card__price-rating__flexbox">
-                <h4 class="card__price">$300/night</h4>
-                <div class="card__rating">
-                  <i class="fa-solid fa-sta fa-xlr"></i>
-                  <h4>4.8</h4>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="btn__contaner__slider grid">
-          <button class="btn__primary">See all</button>
-        </div>
+      <ul class="nav__list">
+        <li><a class="nav__link nav__link--active" href="#">Explore</a></li>
+        <li><a class="nav__link" href="">About us</a></li>
+        <li><a class="nav__link" href="">Contact</a></li>
+        <li>
+          <a class="nav__link nav__link--cta" href="booking.html">Stay with us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+
+  <main>
+    <div class="wrapper">
+
+      <!-- Hero -->
+
+      <article class="hero">
+        <section class="hero__txt-container">
+          <h1>Experience nature with new eyes.</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur elit ...</p>
+        </section>
+      </article>
+
+      <section class="btn__container grid">
+        <button class="btn__secondary">Read more</button>
       </section>
 
-      <!-- About us section -->
+    </div>
 
-      <div class="wrapper">
-        
-        <article class="article__about-us">
-          <section class="article__about-us__txt__container">
-            <h1>Experience nature with new eyes.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur elit ...</p>
-          </section>
-        </article>
+    <!-- Slider -->
 
-        <section class="article__btn__container grid">
-          <button class="btn__secondary">Read more</button>
-        </section>
+    <section class="carousel-wrapper">
+      <h2 class="carousel-wrapper__title">Our facilities</h2>
 
-        <!-- Ratings grid-->
-
-        <section class="ratings__grid">
-          <div class="ratings__block">
-            <img
-              class="ratings__avatar"
-              src="./assets/img/anette-avatar.png"
-              alt="Rating avatar for Luxury Villa"
-            />
-            <h3>Annette Black</h3>
-            <h4>Serenity Suites</h4>
-            <div class="ratings__rating">
-              <h4>4.9</h4>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i
-                class="fa-solid fa-star fa-xl"
-                style="color: rgb(255, 255, 255)"
-              ></i>
+      <ul class="slider">
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Exclusive Hideaway</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Celestial Retreats</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$250/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>4.9</h4>
+              </div>
             </div>
           </div>
+        </li>
 
-          <div class="ratings__block">
-            <img
-              class="ratings__avatar"
-              src="./assets/img/ted-avatar.png"
-              alt="Rating avatar for Luxury Villa"
-            />
-            <h3>Ted Johnson</h3>
-            <h4>Oasis Opulence</h4>
-            <div class="ratings__rating">
-              <h4>4.8</h4>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #fffffd"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Tranquil Escape</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Serenity Suites</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$200/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>4.8</h4>
+              </div>
             </div>
           </div>
+        </li>
 
-          <div class="ratings__block">
-            <img
-              class="ratings__avatar"
-              src="./assets/img/cameron-avatar.png"
-              alt="Rating avatar for Luxury Villa"
-            />
-            <h3>Cameron Wiliamson</h3>
-            <h4>Luxe Haven</h4>
-            <div class="ratings__rating">
-              <h4>4.9</h4>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i
-                class="fa-solid fa-star fa-xl"
-                style="color: rgb(255, 255, 255)"
-              ></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
-              <i class="fa-solid fa-star fa-xl" style="color: #ffffff"></i>
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Vibrant Waterfront</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Harbor Haven</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$300/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>4.8</h4>
+              </div>
             </div>
           </div>
-        </section>
+        </li>
+
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Magical Retreat</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Enchanted Escapes</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$300/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>5.0</h4>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Luxury Desert Haven</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Oasis Opulence</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$180/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>4.9</h4>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="slider__card">
+          <figure class="slider__img">
+            <h4 class="slider__img-overlay-txt">Urban Elegance</h4>
+          </figure>
+          <div class="slider__info">
+            <h3 class="slider__title">Luxe Haven</h3>
+            <div class="slider__price-ratings-flexbox">
+              <h4 class="slider__price">$300/night</h4>
+              <div class="slider__rating">
+                <i class="fa-solid fa-star fa-lg"></i>
+                <h4>4.8</h4>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="carousel__btn-contaner grid">
+        <button class="btn__primary">See all</button>
       </div>
+    </section>
+
+    <!-- About us section -->
+
+    <div class="wrapper">
+
+      <article class="about-us">
+        <section class="about-us__txt-container">
+          <h2>Experience nature with new eyes.</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur elit ...</p>
+        </section>
+      </article>
+
+      <section class="btn__container grid">
+        <button class="btn__secondary">Read more</button>
+      </section>
+
+      <!-- Ratings grid-->
+
+      <section class="review-section">
+
+        <div class="review-item">
+          <img class="review-item__avatar" src="./assets/img/anette-avatar.png" alt="Resident review avatar" />
+          <h4 class="review-item__name">Annette Black</h4>
+          <h4 class="review-item__resident">Serenity Suites</h4>
+          <div class="review-item__rating">
+            <h4 class="review-item__score">4.9</h4>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="review-item__avatar" src="./assets/img/ted-avatar.png" alt="Resident review avatar" />
+          <h4 class="review-item__name">Ted Johnson</h4>
+          <h4 class="review-item__resident">Oasis Opulence</h4>
+          <div class="review-item__rating">
+            <h4 class="review-item__score">4.8</h4>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="review-item__avatar" src="./assets/img/cameron-avatar.png" alt="Resident review avatar" />
+          <h4 class="review-item__name">Lee Wiliamson</h4>
+          <h4 class="review-item__resident">Luxe Haven</h4>
+          <div class="review-item__rating">
+            <h4 class="review-item__score">4.9</h4>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+            <i class="fa-solid fa-star" style="color: #dad7d2;"></i>
+          </div>
+        </div>
+
+      </section>
+
     </main>
 
     <!-- FOOTER -->
 
-    <footer>
-      <nav class="footer__nav">
-        <ul class="footer__nav__list">
-          <li>
-            <a
-              class="footer__nav__link nav__link nav__link--cta"
-              href="booking.html"
-              >Stay with us</a
-            >
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li><a class="footer-nav__link nav__link--cta nav__link" href="booking.html">Stay with us</a>
           </li>
-          <li>
-            <a class="footer__nav__link nav__link nav__link--active" href="#"
-              >Explore</a
-            >
+          <li><a class="footer-nav__link nav__link--active nav__link" href="#">Explore</a>
           </li>
-          <li><a class="footer__nav__link nav__link" href="#">About us</a></li>
-          <li><a class="footer__nav__link nav__link" href="#">Contact</a></li>
-          <li class="footer__top-btn">
-            <a href="#"
-              ><i class="fa-solid fa-chevron-up fa-xl" style="color: #182525"></i
-            ></a>
-              </li>
+          <li><a class="footer-nav__link nav__link" href="#">About us</a>
+          </li>
+          <li><a class="footer-nav__link nav__link" href="#">Contact</a>
+          </li>
+          <li class="footer-nav__link footer-nav__link--top-btn nav__link">
+            <a href="#">
+              <i class="fa-solid fa-chevron-up fa-lg" style="color: #182525"></i>
+            </a>
+          </li>
         </ul>
       </nav>
-
     </footer>
-  </body>
+
+    </div>
+</body>
+
 </html>

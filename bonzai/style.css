@@ -731,7 +731,7 @@ main {
 
 .bookings-form__item--select {
   grid-area: 2 / 1 / 2 / 4;
-  margin: 2.5rem 0 4rem;
+  margin: 2.5rem 0 3rem;
 }
 
 .bookings-form__item--title {
@@ -833,7 +833,7 @@ main {
   border: solid var(--background-btn);
   cursor: pointer;
   transition: all 0.1s;
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 .bookings-form__btn:hover {
